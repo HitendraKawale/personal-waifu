@@ -1,0 +1,36 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="A local 3D character viewer for Personal Waifu." />
+    <link rel="icon" href="data:," />
+    <title>Personal Waifu</title>
+  </head>
+  <body>
+    <main>
+      <header>
+        <h1>Personal Waifu</h1>
+        <p>A character viewer. Anime recommendations come later.</p>
+      </header>
+      <section aria-labelledby="character-name">
+        <h2 id="character-name">pixiv sample avatar</h2>
+        <p id="status" role="status" aria-live="polite">Loading character…</p>
+        <div id="viewer" aria-label="3D character viewer"></div>
+        <fieldset id="controls" disabled>
+          <legend>Camera controls</legend>
+          <button type="button" id="rotate-left">Rotate left</button>
+          <button type="button" id="rotate-right">Rotate right</button>
+          <button type="button" id="zoom-in">Zoom in</button>
+          <button type="button" id="zoom-out">Zoom out</button>
+          <button type="button" id="reset-view">Reset view</button>
+        </fieldset>
+        <p id="camera-help">Drag to rotate. Scroll or pinch to zoom. You can also use the buttons above.</p>
+      </section>
+      <footer>
+        <p>Starter avatar by pixiv Inc. <a href="/models/README.md">Asset source and license</a></p>
+      </footer>
+    </main>
+    <script type="module" src="/src/main.js"></script>
+  </body>
+</html>

@@ -6,3 +6,5 @@ secret*
 credentials*
 *.pem
 *.key
+node_modules/
+dist/
