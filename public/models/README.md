@@ -1,4 +1,6 @@
-# Starter avatar
+# Bundled avatars
+
+## Starter avatar
 
 `starter.vrm` is an unmodified copy of `VRM1_Constraint_Twist_Sample`, version `v1.0.1`, by pixiv Inc.
 
@@ -9,7 +11,7 @@
 - SHA-256: `12c2b97e95e700783a6a550dc0eee2d7880aeedccef9ae67bc4c5a2f0f2631a2`
 - License: [VRM Public License 1.0](https://vrm.dev/licenses/1.0/), together with the license settings embedded in the file.
 
-## Embedded license settings
+### Starter license settings
 
 | Setting | Value |
 | --- | --- |
@@ -26,3 +28,30 @@
 These settings describe the asset license, not this application's intended content. This project uses the model as a character-viewer sample.
 
 The license and embedded settings permit this unmodified model's redistribution and avatar use. Follow the full terms when reusing or modifying it. Do not imply pixiv endorsement or add restrictions that contradict the license. The model comes without warranties. The Three.js and three-vrm code licenses do not replace this asset license.
+
+## Seed-san
+
+`seed-san.vrm` is an unmodified copy of Seed-san, version `1`, by VirtualCast, Inc.
+
+- Copyright: VirtualCast, Inc.
+- Source: https://github.com/vrm-c/vrm-specification/blob/94e82dd346fa6cf0337c4421728640e5252dd38e/samples/Seed-san/vrm/Seed-san.vrm
+- Revision: `94e82dd346fa6cf0337c4421728640e5252dd38e`
+- Size: 10,917,800 bytes.
+- SHA-256: `624d0d554bc205bbdc33e22a68a2c3c20edebb3e573011ead8878a65e5329b23`
+- License: [VRM Public License 1.0](https://vrm.dev/licenses/1.0/), together with the license settings embedded in the file.
+
+### Seed-san license settings
+
+| Setting | Value |
+| --- | --- |
+| Avatar permission | `everyone` |
+| Commercial usage | `corporation` |
+| Redistribution | Allowed |
+| Modification | `allowModificationRedistribution` |
+| Credit notation | `required` |
+| Antisocial or hate usage | Allowed |
+| Excessively sexual usage | Allowed |
+| Excessively violent usage | Allowed |
+| Political or religious usage | Allowed |
+
+Credit VirtualCast, Inc. when using or redistributing Seed-san, and retain its source, copyright, and license notices. The model is supplied without warranties. This project does not claim endorsement by VirtualCast, Inc. The code dependencies' licenses do not replace the model's license.

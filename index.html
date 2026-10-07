@@ -14,6 +14,13 @@
         <p>A character viewer. Anime recommendations come later.</p>
       </header>
       <section aria-labelledby="character-name">
+        <div class="character-picker">
+          <label for="character-select">Character</label>
+          <select id="character-select" disabled>
+            <option value="starter">pixiv sample avatar</option>
+            <option value="seed-san">Seed-san</option>
+          </select>
+        </div>
         <h2 id="character-name">pixiv sample avatar</h2>
         <p id="status" role="status" aria-live="polite">Loading character…</p>
         <div id="viewer" aria-label="3D character viewer"></div>
@@ -26,9 +33,19 @@
           <button type="button" id="reset-view">Reset view</button>
         </fieldset>
         <p id="camera-help">Drag to rotate. Scroll or pinch to zoom. You can also use the buttons above.</p>
+        <fieldset id="interactions" disabled aria-describedby="interaction-help">
+          <legend>Interaction</legend>
+          <button type="button" data-reaction="happy">Smile</button>
+          <button type="button" data-reaction="surprised">Surprise</button>
+          <button type="button" id="reset-character">Reset character</button>
+          <label><input type="checkbox" id="automatic-motion"> Automatic motion</label>
+          <label><input type="checkbox" id="follow-pointer"> Follow pointer</label>
+        </fieldset>
+        <p id="interaction-help">Choose a character to enable interactions.</p>
+        <p id="reaction-status" role="status" aria-live="polite"></p>
       </section>
       <footer>
-        <p>Starter avatar by pixiv Inc. <a href="/models/README.md">Asset source and license</a></p>
+        <p>Starter avatar by pixiv Inc. Seed-san by VirtualCast, Inc. <a href="/models/README.md">Asset sources and licenses</a></p>
       </footer>
     </main>
     <script type="module" src="/src/main.js"></script>

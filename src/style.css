@@ -19,13 +19,20 @@ header { margin-bottom: 28px; }
 canvas { display: block; width: 100%; height: 100%; }
 fieldset { display: flex; flex-wrap: wrap; gap: 8px; margin: 20px 0 0; padding: 0; border: 0; }
 legend { padding: 0; margin-bottom: 10px; font-weight: 600; }
-button { min-height: 44px; padding: 10px 16px; border: 1px solid #b7c1ce; border-radius: 6px; background: #fff; color: inherit; font: inherit; cursor: pointer; }
+button, select { min-height: 44px; padding: 10px 16px; border: 1px solid #b7c1ce; border-radius: 6px; background: #fff; color: inherit; font: inherit; cursor: pointer; }
 button:hover:enabled { background: #e5eaf8; border-color: #5265a1; }
-button:disabled { opacity: 0.5; cursor: not-allowed; }
-button:focus-visible, a:focus-visible { outline: 3px solid #465caf; outline-offset: 3px; }
+button:disabled, select:disabled { opacity: 0.5; cursor: not-allowed; }
+button:focus-visible, select:focus-visible, input:focus-visible, a:focus-visible { outline: 3px solid #465caf; outline-offset: 3px; }
 a { color: #384f9a; text-underline-offset: 3px; }
 #camera-help, footer { font-size: 0.875rem; }
 footer { margin-top: 24px; }
+.character-picker { display: grid; gap: 8px; max-width: 24rem; margin-bottom: 20px; }
+.character-picker label { font-weight: 600; }
+select { width: 100%; }
+#interactions label { display: inline-flex; align-items: center; gap: 8px; min-height: 44px; padding: 8px; }
+#interactions input { width: 18px; height: 18px; accent-color: #465caf; }
+#interaction-help, #reaction-status { font-size: 0.875rem; }
+#reaction-status { min-height: 1.5em; }
 
 @media (max-width: 480px) {
   main { padding: 24px 16px 16px; }
